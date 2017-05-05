@@ -31,20 +31,10 @@
 .UDATA
 	
 	input resb 	100 
-	v1 	  resb  100 ;;Variables para manejo de expresiones
-	v2 	  resb  100
-	v3 	  resb  100 ;;16 bytes para el nombre de variable y 44 para la expresion
-	v4 	  resb  100 
-	v5 	  resb  100
-	v6 	  resb  100 
-	v7 	  resb  100 
-	v8 	  resb  100
-	v9 	  resb  100 
-	v10   resb  100 
-	v11   resb  100
-	v12   resb  100 
-	aux	  resb  100
+	v1 	  resb  1000 ;;Variables para manejo de expresiones
 	fin	  resb  1
+	aux	  resb  100
+	aux_e resb	10
 	
 	
 	
@@ -55,15 +45,15 @@
 		
 		
 		PutStr sim
-		HexToInt h, 8
+		;HexToInt h, 8
 		PutCh '>'
 		
 		PutStr sim
-		OctToInt octal, 8
+		;OctToInt octal, 8
 		PutCh '>'
 		
 		PutStr sim
-		BinToInt b, 8
+		;BinToInt b, 8
 		PutCh '>'
 		
 		
